@@ -175,7 +175,7 @@ header.masthead .masthead-heading {
     justify-content: center;
     opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover{
     display:flex;
     position: absolute;
     width: 100%;
@@ -185,16 +185,6 @@ header.masthead .masthead-heading {
     justify-content: center;
     opacity: 1;
 }
-/* #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 200, 0, 0.9);
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-} */
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content svg:hover {
     font-size: 1.25rem;
@@ -417,4 +407,33 @@ section#contact form#contactForm .form-group-textarea textarea {
     .about {
         display: none !important;
     }
+}
+
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(0, -50px);
+}
+.portfolio-modal .modal-dialog {
+    margin: 1rem;
+    max-width: 100vw;
+}
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: var(--bs-modal-margin);
+    pointer-events: none;
 }
